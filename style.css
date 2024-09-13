@@ -1,0 +1,110 @@
+/* General Body Style */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #6a00f4, #7b00ff);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #ffffff;
+}
+
+/* Chatbox Container */
+#chatbox {
+    width: 400px;
+    height: 550px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    color: #fff;  /* Ensures visible text */
+}
+
+/* Input Field */
+#userInput {
+    width: 80%;
+    padding: 15px;
+    border: none;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;  /* Light text to make input visible */
+    font-size: 16px;
+    outline: none;
+    caret-color: yellow;
+}
+
+/* Buttons Style */
+button {
+    padding: 12px 24px;
+    background-color: #ffcc00;
+    color: black;
+    font-size: 14px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #e6b800;
+    box-shadow: 0px 0px 10px 2px rgba(255, 255, 0, 0.8);
+}
+
+/* Pokémon Sprite Style */
+.pokemon-sprite {
+    width: 120px;
+    height: 120px;
+    margin: 10px auto;
+    display: block;
+    animation: bounce 1.5s infinite;
+}
+
+.pokemon-sprite:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+/* Bounce Animation for Pokémon Sprite */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+/* Chat Text Animation */
+p {
+    font-size: 16px;
+    margin: 5px 0;
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+}
+
+/* Fade-in Effect for Chat Text */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Button Container */
+#buttons {
+    display: flex;
+    justify-content: space-between;
+}
